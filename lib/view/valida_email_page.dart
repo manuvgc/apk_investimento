@@ -52,7 +52,7 @@ class _ValidaEmail extends State<ValidaEmail> {
             ),
             if (campo != null)
               FutureBuilder(
-                future: apiService.ValidaEmail(campo!),
+                future: apiService.validaEmail(campo!),
                 builder: (context, snapshot) {
                   switch (snapshot.connectionState) {
                     case ConnectionState.waiting:

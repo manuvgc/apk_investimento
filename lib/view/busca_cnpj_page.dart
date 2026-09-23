@@ -52,7 +52,7 @@ class _BuscaCnpj extends State<BuscaCnpj> {
             ),
             if (campo != null)
               FutureBuilder(
-                future: apiService.BuscaCnpj(campo!),
+                future: apiService.buscaCNPJ(campo!),
                 builder: (context, snapshot) {
                   switch (snapshot.connectionState) {
                     case ConnectionState.waiting:
